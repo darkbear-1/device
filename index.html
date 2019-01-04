@@ -5,6 +5,8 @@
 	<title>Device</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=0925d7bd-7e31-4ad2-85c6-5bd49f4475bc&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
 	<header class="conteiner">
@@ -12,6 +14,7 @@
 			<a href="#" class="logo">Device</a>
 			<form action="#" class="find-form" method="post">
 				<input class="find" type="text" placeholder="Поиск по сайту">
+				<a href="#">Найти</a>
 			</form>
 			<ul class="user-nav">
 				<li class="user-nav-item"><a href="#">Войти</a></li>
@@ -19,7 +22,18 @@
 				<li class="user-nav-item"><a href="#">Корзина</a></li>
 			</ul>
 			<ul class="site-nav">
-				<li class="site-nav-item catalog-link"><a href="#">Каталог товаров</a></li>
+				<li class="site-nav-item catalog-link"><a class="catalog-product" href="#">Каталог товаров</a>
+				<div class="catalog-overlay">
+					<ul class="catalog-list">
+						<li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+						<li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+						<li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+						<li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+						<li class="catalog-item"><a href="#">Умные часы</a></li>
+						<li class="catalog-item"><a href="#">Квадракоптеры</a></li>
+					</ul>
+				</div>
+				</li>
 				<li class="site-nav-item"><a href="#">Доставка</a></li>
 				<li class="site-nav-item"><a href="#">Гарантия</a></li>
 				<li class="site-nav-item"><a href="#">Контакты</a></li>
@@ -27,15 +41,18 @@
 		</div>
 	</header>
 	<main>
-		<section class="slider">
-			<div class="slide-one">
-				<img src="#" alt="" class="product-image">
-				<h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+		<section class="slider header-conteiner">
+				<ul class="radio-wrap">
+					<li class="radio-label"><input type="radio" name="radio-group" checked><span class="radio-indicator"><span class="radio-current"></span></span></li>
+					<li class="radio-label"><input type="radio" name="radio-group"><span class="radio-indicator"><span class="radio-current"></span></span></li>
+					<li class="radio-label"><input type="radio" name="radio-group"><span class="radio-indicator"><span class="radio-current"></span></span></li>
+				</ul>
+			<div class="slide-one sliders-page">
+				<img src="img/product-image-1.png" alt="" class="product-image">
+				<h2 class="slider-title">Делай селфи, <br>
+				как Бен Стиллер!</h2>
 				<p>Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-				<span class="read-more">Подробнее</span>
-				<input type="radio" name="radio-group">
-				<input type="radio" name="radio-group">
-				<input type="radio" name="radio-group">
+				<a href="#" class="read-more">Подробнее</a>
 				<ul class="specifications">
 					<li class="specifications-item">
 						<b>8,5 м</b>
@@ -51,23 +68,20 @@
 					</li>
 				</ul>
 			</div>
-			<div class="slide-two">
-				<img src="#" alt="" class="product-image">
-				<h2 class="slider-title">Худеем правильно!</h2>
+			<div class="slide-two sliders-page">
+				<img src="img/product-image-2.png" alt="" class="product-image">
+				<h2 class="slider-title">Худеем <br> правильно!</h2>
 				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать занятия и соблюдать диету.</p>
-				<span class="read-more">Подробнее</span>
-				<input type="radio" name="radio-group">
-				<input type="radio" name="radio-group">
-				<input type="radio" name="radio-group">
+				<span class="read-more">Подробнее</span> 
 				<ul class="specifications">
 					<li class="specifications-item">
-						<b>48 часов м</b>
+						<b>48 часов</b>
 						<span>Без подзарядки</span>
 					</li>
 				</ul>
 			</div>
-			<div class="slide-three">
-				<img src="#" alt="" class="product-image">
+			<div class="slide-three sliders-page">
+				<img src="img/product-image-3.png" alt="" class="product-image">
 				<h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
 				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
 				<span class="read-more">Подробнее</span>
@@ -87,76 +101,99 @@
 			</div>
 		</section>
 		<nav class="product-category">
-			<ul class="product-catgeroy-list">
+			<ul class="product-category-list  conteiner">
 				<li class="product-category-item">
 					<a href="#">
-						<span class="product-category-icon"></span>
-						<b>Виртуальная реальность</b>
+						<span class="product-category-icon"><img src="img/popular-1.png" alt=""></span>
+						<b>Виртуальная <br> реальность</b>
 					</a>
 				</li>
 				<li class="product-category-item">
 					<a href="#">
-						<span class="product-category-icon"></span>
-						<b>Моноподы для селфи</b>
+						<span class="product-category-icon"><img src="img/popular-2.png" alt=""></span>
+						<b>Моноподы <br> для селфи</b>
 					</a>
 				</li>
 				<li class="product-category-item">
 					<a href="#">
-						<span class="product-category-icon"></span>
+						<span class="product-category-icon"><img src="img/popular-3.png" alt=""></span>
 						<b>Экшн-камеры</b>
 					</a>
 				</li>
 				<li class="product-category-item">
 					<a href="#">
-						<span class="product-category-icon"></span>
+						<span class="product-category-icon"><img src="img/popular-4.png" alt=""></span>
 						<b>Фитнес-браслеты</b>
 					</a>
 				</li>
 				<li class="product-category-item">
 					<a href="#">
-						<span class="product-category-icon"></span>
+						<span class="product-category-icon"><img src="img/popular-5.png" alt=""></span>
 						<b>Умные часы</b>
 					</a>
 				</li>
 				<li class="product-category-item">
 					<a href="#">
-						<span class="product-category-icon"></span>
+						<span class="product-category-icon"><img src="img/popular-6.png" alt=""></span>
 						<b>Квадракоптеры</b>
 					</a>
 				</li>
 			</ul>
 		</nav>
 		<section class="features">
-			<ul class="features-list">
-				<li><input type="radio" name="features-radio"></li>
-				<li><input type="radio" name="features-radio"></li>
-				<li><input type="radio" name="features-radio"></li>
-			</ul>
-			<div class="delivery">
-				<h2>Доставка</h2>
-				<p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж.</p>
-			</div>
-			<div class="warrany">
-				<h2>Гарантия</h2>
-				<p>Если из-за возгорания купленного у нас товара у вас сгорит <br> дом — не переживайте, мы выдадим вам новый. <br> 
-				Товар, не дом, конечно же.</p>
-			</div>
-			<div class="credit">
-				<h2>Кредит</h2>
-				<p>Залезть в долговую яму стало проще! Кредитные <br>
-				консультанты подберут для вас наиболее выгодные <br>
-				условия кредита. Выгодные для нашего банка, разумеется.</p>
+			<div class="conteiner">
+				<ul class="features-list">
+					<li class="features-item"><input id="option-1" type="radio" name="features-radio" checked><label for="option-1" class="features-option">Доставка</label></li>
+					<li class="features-item"><input id="option-2" type="radio" name="features-radio"><label for="option-2" class="features-option">Гарантия</label></li>
+					<li class="features-item"><input id="option-3" type="radio" name="features-radio"><label for="option-3" class="features-option">Кредит</label></li>
+				</ul>
+				<div class="delivery features-about">
+					<h2>Доставка</h2>
+					<p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж.</p>
+					<img src="img/delivery.svg" alt="">
+				</div>
+				<div class="warranty features-about">
+					<h2>Гарантия</h2>
+					<p>Если из-за возгорания купленного у нас товара у вас сгорит <br> дом — не переживайте, мы выдадим вам новый. <br> 
+					Товар, не дом, конечно же.</p>
+					<img src="img/warranty.svg" alt="">
+				</div>
+				<div class="credit features-about">
+					<h2>Кредит</h2>
+					<p>Залезть в долговую яму стало проще! Кредитные <br>
+					консультанты подберут для вас наиболее выгодные <br>
+					условия кредита. Выгодные для нашего банка, разумеется.</p>
+					<img src="img/credit.svg" alt="">
+				</div>
 			</div>
 		</section>
-		<section class="about-shop">
-			<div class="brend">
+		<section class="about-shop conteiner">
 				<ul class="brend-list">
-					<li class="brend-item"><img src="" alt=""></li>
-					<li class="brend-item"><img src="" alt=""></li>
-					<li class="brend-item"><img src="" alt=""></li>
-					<li class="brend-item"><img src="" alt=""></li>
+					<li class="brend-item">
+						<a href="#">
+							<img class="img-static" src="img/brend-logo-1.png" alt="">
+							<img class="img-hover" src="img/brend-logo-1-color.png" alt="">
+						</a>
+					</li>
+					<li class="brend-item">
+						<a href="#">
+							<img class="img-static" src="img/brend-logo-2.png" alt="">
+							<img class="img-hover" src="img/brend-logo-2-color.png" alt="">
+						</a>
+					</li>
+					<li class="brend-item">
+						<a href="#">
+							<img class="img-static" src="img/brend-logo-3.png" alt="">
+							<img class="img-hover" src="img/brend-logo-3-color.png" alt="">
+						</a>
+					</li>
+					<li class="brend-item">
+						<a href="#">
+							<img class="img-static" src="img/brend-logo-4.png" alt="">
+							<img class="img-hover" src="img/brend-logo-4-color.png" alt="">
+						</a>
+					</li>
 				</ul>
-			</div>
 			<div class="about-us">
 				<h2>О нас</h2>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, <br>
@@ -172,32 +209,209 @@
 			</div>
 			<div class="contacts">
 				<h2>Контакты</h2>
-				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+				<p id="pet">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
 				проверить работоспособность покупки. Всякое бывает.</p>
 				<div id="map"></div>
-				<a href="#">Напишите нам</a>
+				<a class="contacts-link" href="#">Напишите нам</a>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<div class="footer-logo">Device</div>
-		<ul class="footer-nav">
-			<li class="footer-nav-item">Войти</li>
-			<li class="footer-nav-item">Сравнить</li>
-			<li class="footer-nav-item">Корзина</li>
-		</ul>
-		<p class="adress">г. Москва, ул. Строителей, 15</p>
-		<ul class="footer-list">
-			<li class="footer-item">Доставка</li>
-			<li class="footer-item">Гарантия</li>
-			<li class="footer-item">Контакты</li>
-		</ul>
-		<p class="phone">Тел.: +7 (495) 495-95-95</p>
-		<ul class="social-link">
-			<li class="social-link-item"><a href="#">Фейсбук</a></li>
-			<li class="social-link-item"><a href="#">Инстаграмм</a></li>
-			<li class="social-link-item"><a href="#">Твитер</a></li>
-		</ul>
+		<div class="conteiner">
+			<a href="#" class="footer-logo">Device</a>
+			<ul class="footer-nav">
+				<li class="footer-nav-item"><a href="#">Войти</a></li>
+				<li class="footer-nav-item"><a href="#">Сравнить</a></li>
+				<li class="footer-nav-item"><a href="#">Корзина</a></li>
+			</ul>
+			<p class="adress">г. Москва, ул. Строителей, 15</p>
+			<ul class="footer-list">
+				<li class="footer-item"><a href="#">Доставка</a></li>
+				<li class="footer-item"><a href="#">Гарантия</a></li>
+				<li class="footer-item"><a href="#">Контакты</a></li>
+			</ul>
+			<p class="phone">Тел.: +7 (495) 495-95-95</p>
+			<ul class="social-link">
+				<li class="social-link-item"><a href="#">Фейсбук</a></li>
+				<li class="social-link-item"><a href="#">Инстаграмм</a></li>
+				<li class="social-link-item"><a href="#">Твитер</a></li>
+			</ul>
+			<a href="#" class="html-link"></a>
+		</div>
 	</footer>
+	<div class="write-us-popup">
+		<form action="#" class="write-us-form" method="post">
+			<label class="write-us-label">Ваше имя:<input type="text" name="user" placeholder="Имя Фамилия"></label>
+			<label class="write-us-label">Ваш e-mail:<input type="text" name="usermail" placeholder="email@example.com"></label>
+			<label class="write-us-label">Текст письма:<input type="text" name="sendtext" placeholder="В свободной форме"></label>
+			<button class="form-button" type="submit">Отправить</button>
+		</form>
+		<button class="write-us-close">Закрыть</button>
+	</div>
+	<div id="map-popup"><button class="map-popup-close"></button></div>
+	<div class="overlay"></div>
+	<script>
+		var radioIndicator = document.querySelectorAll(".radio-indicator");
+		var radioCurrent = document.querySelectorAll(".radio-current");
+		var slidersPage = document.querySelectorAll(".sliders-page");
+		var slideOne = document.querySelector(".slide-one");
+		var slideTwo = document.querySelector(".slide-two");
+		var slideThree = document.querySelector(".slide-three");
+		var featuresAbout = document.querySelectorAll(".features-about");
+		var featuresOption = document.querySelectorAll(".features-option");
+		var delivery = document.querySelector(".delivery");
+		var warranty = document.querySelector(".warranty");
+		var credit = document.querySelector(".credit");
+		var writeUsPopup = document.querySelector(".write-us-popup");
+		var mapPopup = document.querySelector("#map-popup");
+		var user = document.querySelector("input[name=user]");
+		var userMail = document.querySelector("input[name=usermail]");
+		var sendText = document.querySelector("input[name=sendtext]");
+		var overlay = document.querySelector(".overlay");
+		var itStorageSupport = true;
+		var storageUser = '';
+		var storageMail = '';
+
+		try {
+			storageUser = localStorage.getItem("user");
+			storageMail = localStorage.getItem("usermail");
+		} catch(err) {
+			itStorageSupport = false;
+		}
+
+		// Slider
+		window.addEventListener("click", function(e) {
+			if (e.target.className == "radio-indicator") {
+				for(var i = 0; i < radioCurrent.length; i++) {
+					radioCurrent[i].style.display="none";
+					slidersPage[i].style.display="none";
+					e.target.querySelector('.radio-current').style.display="block";
+					if (e.target == radioIndicator[0]) {
+						slideOne.style.display="block";
+					}
+					if (e.target == radioIndicator[1]) {
+						slideTwo.style.display="block";
+					}
+					if (e.target == radioIndicator[2]) {
+						slideThree.style.display="block";
+					}
+				}
+			}
+
+			// Features slider
+			if (e.target.className == "features-option") {
+				for (var i = 0; i < featuresAbout.length; i++) {featuresAbout[i].style.display="none";
+					if (e.target == featuresOption[0]) {
+						delivery.style.display="block";
+					}
+					if (e.target == featuresOption[1]) {
+						warranty.style.display="block";
+					}
+					if (e.target == featuresOption[2]) {
+						credit.style.display="block";
+					}
+				}
+			}
+
+			// Write-us popup
+			if (e.target.className == "contacts-link") {
+				e.preventDefault();
+				writeUsPopup.style.display="block";
+				overlay.style.display="block";
+				user.focus();
+				if (itStorageSupport) {
+					user.value=storageUser;
+					userMail.value=storageMail;
+				}
+			}
+			if (e.target.className == "write-us-close") {
+				e.preventDefault();
+				writeUsPopup.style.display="none";
+				overlay.style.display="none";
+			}
+
+			// Overlay close
+			if(e.target.className == 'overlay') {
+				if(!e.target.matches('.write-us-popup, .write-us-popup *')) {
+					writeUsPopup.style.display="none";
+					overlay.style.display="none";
+			    }
+			    if(!e.target.matches('.map-popup, .map-popup *')) {
+				mapPopup.style.display="none";
+				overlay.style.display="none";
+		    	}
+			}
+
+			// Map-popup close
+			if (e.target.className == "map-popup-close") {
+				e.preventDefault();
+				mapPopup.style.display="none";
+				overlay.style.display="none";
+			} 
+		})
+
+		// Esc close popup
+		window.addEventListener("keydown", function(e) {
+			if (e.keyCode == 27) {
+				mapPopup.style.display="none";
+				writeUsPopup.style.display="none";
+				overlay.style.display="none";
+			}
+		})
+
+		// Map popup show
+		document.querySelector("#map").addEventListener("click", function(e) {
+			e.preventDefault();
+			mapPopup.style.display="block";
+			overlay.style.display="block";
+		})
+
+		// Storage local
+		document.querySelector(".write-us-form").addEventListener("submit", function(e) {
+				localStorage.setItem("user", user.value);
+				localStorage.setItem("usermail", userMail.value);
+				if (!user.value || !userMail.value || !sendText.value) {
+					e.preventDefault();
+					writeUsPopup.style.animationName="";
+					writeUsPopup.offsetWidth;
+					writeUsPopup.style.animationName="write-us-shake";
+				}
+		})
+
+		// Yandex Api
+	    ymaps.ready(init);
+	    function init(){ 
+	        // Map    
+	        var myMap = new ymaps.Map("map", {
+	            center: [55.6882,37.5297],
+	            zoom: 15,
+	            controls: [],
+	            behaviors: []
+	        });
+
+	        var placemark = new ymaps.Placemark([55.6870,37.5297], {
+	        	hintContent: 'ул. Строителей 15, Москва'
+	        },
+	        {
+	        	preset: 'islands#redIcon'
+	        });
+	        myMap.geoObjects.add(placemark);
+
+	        // Map-popup
+	        var myMapPopup = new ymaps.Map("map-popup", {
+	            center: [55.6882,37.5297],
+	            zoom: 15,
+	            controls: []
+	        });
+
+	        var placemarkPopup = new ymaps.Placemark([55.6870,37.5297], {
+	        	hintContent: 'ул. Строителей 15, Москва'
+	        },
+	        {
+	        	preset: 'islands#redIcon'
+	        });
+	        myMapPopup.geoObjects.add(placemarkPopup);
+	    }
+	</script>
 </body>
 </html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="catalog-page">
+	<header class="conteiner">
+		<div class="header-conteiner">
+			<a href="index.html" class="logo">Device</a>
+			<form action="#" class="find-form" method="post">
+				<input class="find" type="text" placeholder="Поиск по сайту">
+				<a href="#">Найти</a>
+			</form>
+			<ul class="user-nav">
+				<li class="user-nav-item">
+					<a href="#">Валентин Петухов</a>
+					<a href="#" class="logout">Выйти</a>
+				</li>
+				<li class="user-nav-item"><a href="#">Сравнить</a></li>
+				<li class="user-nav-item"><a href="#">Корзина</a></li>
+			</ul>
+			<ul class="site-nav">
+				<li class="site-nav-item catalog-link"><a class="catalog-product" href="#">Каталог товаров</a>
+				<div class="catalog-overlay">
+					<ul class="catalog-list">
+						<li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+						<li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+						<li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+						<li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+						<li class="catalog-item"><a href="#">Умные часы</a></li>
+						<li class="catalog-item"><a href="#">Квадракоптеры</a></li>
+					</ul>
+				</div>
+				</li>
+				<li class="site-nav-item"><a href="#">Доставка</a></li>
+				<li class="site-nav-item"><a href="#">Гарантия</a></li>
+				<li class="site-nav-item"><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</header>
+	<section class="title-wrap header-conteiner">
+			<h1 class="catalog-category-title">Моноподы для селфи</h1>
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs-item"><a href="#">Главная</a></li>
+				<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+				<li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
+			</ul>
+	</section>
+	<section class="catalog-category">
+		<div class="column-one">
+			<div class="conteiner">
+				<h3 class="form-name">Фильтр:</h3>
+				<ul class="sort-option-list">
+					<li class="sort-item">Сортировка:</li>
+					<li class="sort-item"><button class="sort-item-category sort-current">По цене</button></li>
+					<li class="sort-item"><button class="sort-item-category">По типу</button></li>
+					<li class="sort-item"><button class="sort-item-category">По функционалу</button></li>
+					<li class="sort-item"><button class="sort-icon sort-up sort-active"></button></li>
+					<li class="sort-item"><button class="sort-icon sort-down"></button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="conteiner">
+			<form action="#" method="post" class="filter-form">
+				<fieldset class="range-name">
+					Стоимость
+					<div class="range-wrap">
+						<div id='id66' class="range">
+							<div id='id66b' class='range__between'></div>
+						    <button id='id661' class="range__button_1" onclick="event.preventDefault()" tabindex="-1"></button>
+						    <button id='id662' class="range__button_2" onclick="event.preventDefault()" tabindex="-1"></button>
+						</div>
+					</div>
+					    <input id='id66i1' class='range_inpt1' type='number' min='0' max='35000'>
+					    <input id='id66i2' class='range_inpt2' type='number' min='0' max='35000'>
+					    <span class="radio-text">от 0</span>
+					    <span class="radio-text">до 5000</span>
+				</fieldset>
+				<fieldset class="brend-field">
+					<legend>Цвет</legend>
+					<label class="brend-label"><input type="checkbox" name="brend-checkbox" checked><span class="check-indicator"></span>Черный</label>
+					<label class="brend-label"><input type="checkbox" name="brend-checkbox"><span class="check-indicator"></span>Белый</label>
+					<label class="brend-label"><input type="checkbox" name="brend-checkbox" checked><span class="check-indicator" checked></span>Синий</label>
+					<label class="brend-label"><input type="checkbox" name="brend-checkbox" checked><span class="check-indicator"></span>Красный</label>
+					<label class="brend-label"><input type="checkbox" name="brend-checkbox"><span class="check-indicator"></span>Розовый</label>
+				</fieldset>
+				<fieldset class="power-fielsdet">
+					<legend>Bluetooth</legend>
+					<label class="power-label"><input type="radio" name="power-radio" checked><span class="power-radio-indicator"></span>Есть</label>
+					<label class="power-label"><input type="radio" name="power-radio"><span class="power-radio-indicator"></span>Нет</label>
+				</fieldset>
+				<button type="submit" class="filter-form-button">Показать</button>
+			</form>
+			<div class="product-column">
+				<ul class="popular-product-list">
+						<li class="popular-product-item" tabindex='0'>
+							<img src="img/product-photo-1.jpg" alt="Перфоратор BOSCH BFG 3000">
+							<div class="links-overlay">
+								<a href="#" class="popular-product-buy">В корзину</a>
+								<a href="#" class="popular-product-bookmarks">Добавить к сравнению</a>
+							</div>
+							<h3 class="product-name">Любительская селфи-палка</h3>
+							<p class="product-price">500 руб.</p>
+						</li>
+						<li class="popular-product-item" tabindex='0'>
+							<img src="img/product-photo-2.jpg" alt="Перфоратор BOSCH BFG 6000">
+							<div class="links-overlay">
+								<a href="#" class="popular-product-buy">В корзину</a>
+								<a href="#" class="popular-product-bookmarks">Добавить к сравнению</a>
+							</div>
+							<h3 class="product-name">Профессиональная <br> селфи-палка</h3>
+							<p class="product-price">1500 руб.</p>
+						</li>
+						<li class="popular-product-item" tabindex='0'>
+							<img src="img/product-photo-3.jpg" alt="Перфоратор BOSCH BFG 2000">
+							<div class="links-overlay">
+								<a href="#" class="popular-product-buy">В корзину</a>
+								<a href="#" class="popular-product-bookmarks">Добавить к сравнению</a>
+							</div>
+							<h3 class="product-name">Непотопляемая селфи-палка</h3>
+							<p class="product-price">2500 руб.</p>
+						</li>
+						<li class="popular-product-item new" tabindex='0'>
+							<img src="img/product-photo-4.jpg" alt="Перфоратор BOSCH BFG 3000">
+							<div class="links-overlay">
+								<a href="#" class="popular-product-buy">В корзину</a>
+								<a href="#" class="popular-product-bookmarks">Добавить к сравнению</a>
+							</div>
+							<h3 class="product-name">Селфи-палка "Следуй за <br> мной"</h3>
+							<p class="product-price">4900 руб.</p>
+						</li>
+					</ul>
+				<ul class="paginator">
+					<li class="paginator-item"><button class="paginator-item-btn">Назад</button></li>
+					<li>
+						<ul class="paginator-number">
+							<li class="paginator-number-item"><button class="paginator-number-item-btn paginator-item-btn-current">1</button></li>
+							<li class="paginator-number-item"><button class="paginator-number-item-btn">2</button></li>
+							<li class="paginator-number-item"><button class="paginator-number-item-btn">3</button></li>
+						</ul>
+					</li>
+					<li class="paginator-item"><button class="paginator-item-btn">Вперед</button></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="conteiner">
+			<a href="#" class="footer-logo">Device</a>
+			<ul class="footer-nav">
+				<li class="footer-nav-item"><a href="#">Войти</a></li>
+				<li class="footer-nav-item"><a href="#">Сравнить</a></li>
+				<li class="footer-nav-item"><a href="#">Корзина</a></li>
+			</ul>
+			<p class="adress">г. Москва, ул. Строителей, 15</p>
+			<ul class="footer-list">
+				<li class="footer-item"><a href="#">Доставка</a></li>
+				<li class="footer-item"><a href="#">Гарантия</a></li>
+				<li class="footer-item"><a href="#">Контакты</a></li>
+			</ul>
+			<p class="phone">Тел.: +7 (495) 495-95-95</p>
+			<ul class="social-link">
+				<li class="social-link-item"><a href="#">Фейсбук</a></li>
+				<li class="social-link-item"><a href="#">Инстаграмм</a></li>
+				<li class="social-link-item"><a href="#">Твитер</a></li>
+			</ul>
+			<a href="#" class="html-link"></a>
+		</div>
+	</footer>
+	<script>
+		    // Range Slider
+	setTimeout(init2slider('id66', 'id66b', 'id661', 'id662', 'id66i1', 'id66i2'), 0);
+
+	function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
+	    var slider = document.getElementById(idX);
+	    var between = document.getElementById(btwX); 
+	    var button1 = document.getElementById(btn1X);
+	    var button2 = document.getElementById(btn2X);   
+	    var inpt1 = document.getElementById(input1); 
+	    var inpt2 = document.getElementById(input2); 
+	  	
+	            var min=inpt1.min;
+	  					var max=inpt1.max;
+	    
+	    /*init*/
+	    var sliderCoords = getCoords(slider);
+	    button1.style.marginLeft = '-5px';
+	    button2.style.marginLeft = 108 + 'px';
+	    between.style.width = 120 + 'px';
+	    inpt1.value = 0;
+	    inpt2.value = 30000;
+	    
+	    inpt1.onchange= function(evt)
+	    {
+	    	if (parseInt(inpt1.value) < min)
+	    		inpt1.value = min;
+	    	if (parseInt(inpt1.value) > max)
+	    		inpt1.value = max;
+	    	if (parseInt(inpt1.value) > parseInt(inpt2.value))
+	      {
+	      	var temp = inpt1.value;
+	    		inpt1.value = inpt2.value;
+	    		inpt2.value = temp;
+	      }
+	      
+	      
+	        var sliderCoords = getCoords(slider);
+	        var per1 = parseInt(inpt1.value-min)*100/(max-min);
+	        var per2 = parseInt(inpt2.value-min)*100/(max-min);
+	        var left1 = per1*(slider.offsetWidth-button1.offsetWidth)/100;
+	        var left2 = per2*(slider.offsetWidth-button1.offsetWidth)/100;
+	        
+	            button1.style.marginLeft = left1 + 'px'; 
+	            button2.style.marginLeft = left2 + 'px';
+	            
+	            if (left1 > left2)
+	              {
+	                between.style.width = (left1-left2) + 'px';
+	                between.style.marginLeft = left2 + 'px';
+	              }
+	            else
+	              {
+	                between.style.width = (left2-left1) + 'px';
+	                between.style.marginLeft = left1 + 'px';  
+	              }
+	    }
+	    inpt2.onchange= function(evt)
+	    {
+	    	if (parseInt(inpt2.value) < min)
+	    		inpt2.value = min;
+	    	if (parseInt(inpt2.value) > max)
+	    		inpt2.value = max;
+	    	if (parseInt(inpt1.value) > parseInt(inpt2.value))
+	      {
+	      	var temp = inpt1.value;
+	    		inpt1.value = inpt2.value;
+	    		inpt2.value = temp;
+	      }
+	      
+	        var sliderCoords = getCoords(slider);
+	        var per1 = parseInt(inpt1.value-min)*100/(max-min);
+	        var per2 = parseInt(inpt2.value-min)*100/(max-min);
+	        var left1 = per1*(slider.offsetWidth-button1.offsetWidth)/100;
+	        var left2 = per2*(slider.offsetWidth-button1.offsetWidth)/100;
+	        
+	            button1.style.marginLeft = left1 + 'px'; 
+	            button2.style.marginLeft = left2 + 'px';
+	            
+	            if (left1 > left2)
+	              {
+	                between.style.width = (left1-left2) + 'px';
+	                between.style.marginLeft = left2 + 'px';
+	              }
+	            else
+	              {
+	                between.style.width = (left2-left1) + 'px';
+	                between.style.marginLeft = left1 + 'px';  
+	              }
+	    }
+	  
+	    /*mouse*/
+	    button1.onmousedown = function(evt) {       
+	        var sliderCoords = getCoords(slider);
+	        var betweenCoords = getCoords(between); 
+	        var buttonCoords1 = getCoords(button1);
+	        var buttonCoords2 = getCoords(button2);
+	        var shiftX2 = evt.pageX - buttonCoords2.left; 
+	        var shiftX1 = evt.pageX - buttonCoords1.left;
+	      
+	        document.onmousemove = function(evt) {
+	            var left1 = evt.pageX - shiftX1 - sliderCoords.left;
+	            var right1 = slider.offsetWidth - button1.offsetWidth;
+	            if (left1 < 0) left1 = 0;
+	            if (left1 > right1) left1 = right1;
+	            button1.style.marginLeft = left1 + 'px';  
+	            
+	            
+	    				shiftX2 = evt.pageX - buttonCoords2.left; 
+	            var left2 = evt.pageX - shiftX2 - sliderCoords.left;
+	            var right2 = slider.offsetWidth - button2.offsetWidth;
+	            if (left2 < 0) left2 = 0;
+	            if (left2 > right2) left2 = right2;            
+	             
+	                var per_min = 0;
+	                var per_max = 0;
+	            if (left1 > left2)
+	              {
+	                between.style.width = (left1-left2) + 'px';
+	                between.style.marginLeft = left2 + 'px';
+	                 
+	                per_min = left2*100/(slider.offsetWidth-button1.offsetWidth);
+	                per_max = left1*100/(slider.offsetWidth-button1.offsetWidth);
+	              }
+	            else
+	              {
+	                between.style.width = (left2-left1) + 'px';
+	                between.style.marginLeft = left1 + 'px';                
+	                
+	                per_min = left1*100/(slider.offsetWidth-button1.offsetWidth);
+	                per_max = left2*100/(slider.offsetWidth-button1.offsetWidth);
+	              }
+	                inpt1.value= (parseInt(min)+Math.round((max-min)*per_min/100));
+	                inpt2.value= (parseInt(min)+Math.round((max-min)*per_max/100)); 
+	        
+	        };
+	        document.onmouseup = function() {
+	            document.onmousemove = document.onmouseup = null;
+	        };
+	        return false;
+	    };
+	    
+	  button2.onmousedown = function(evt) {       
+	        var sliderCoords = getCoords(slider);
+	        var betweenCoords = getCoords(between); 
+	        var buttonCoords1 = getCoords(button1);
+	        var buttonCoords2 = getCoords(button2);
+	        var shiftX2 = evt.pageX - buttonCoords2.left; 
+	        var shiftX1 = evt.pageX - buttonCoords1.left;
+	      
+	        document.onmousemove = function(evt) {
+	            var left2 = evt.pageX - shiftX2 - sliderCoords.left;
+	            var right2 = slider.offsetWidth - button2.offsetWidth;
+	            if (left2 < 0) left2 = 0;
+	            if (left2 > right2) left2 = right2;
+	            button2.style.marginLeft = left2 + 'px';                      
+	          
+	          
+	            shiftX1 = evt.pageX - buttonCoords1.left; 
+	            var left1 = evt.pageX - shiftX1 - sliderCoords.left;
+	            var right1 = slider.offsetWidth - button1.offsetWidth;  
+	            if (left1 < 0) left1 = 0;
+	            if (left1 > right1) left1 = right1;                      
+	             
+	                var per_min = 0;
+	                var per_max = 0;
+	                
+	            if (left1 > left2)
+	              {
+	                between.style.width = (left1-left2) + 'px';
+	                between.style.marginLeft = left2 + 'px';
+	                per_min = left2*100/(slider.offsetWidth-button1.offsetWidth);
+	                per_max = left1*100/(slider.offsetWidth-button1.offsetWidth);
+	              }
+	            else
+	              {
+	                between.style.width = (left2-left1) + 'px';
+	                between.style.marginLeft = left1 + 'px';
+	                per_min = left1*100/(slider.offsetWidth-button1.offsetWidth);
+	                per_max = left2*100/(slider.offsetWidth-button1.offsetWidth);
+	              }
+	                inpt1.value= (parseInt(min)+Math.round((max-min)*per_min/100));
+	                inpt2.value= (parseInt(min)+Math.round((max-min)*per_max/100)); 
+	            
+	        };
+	        document.onmouseup = function() {
+	            document.onmousemove = document.onmouseup = null;
+	        };
+	        return false;
+	    };
+	    
+	    button1.ondragstart = function() {
+	        return false;
+	    };
+	    button2.ondragstart = function() {
+	        return false;
+	    };
+
+	    function getCoords(elem) {
+	        var box = elem.getBoundingClientRect();
+	        return {
+	            top: box.top + pageYOffset,
+	            left: box.left + pageXOffset
+	        };
+	    }     
+}
+	</script>
+</body>
+</html>
